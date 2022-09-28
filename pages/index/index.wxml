@@ -1,0 +1,21 @@
+<view class="container">
+  <view style="width: 100%;">
+    <location class="location" id="location"></location>
+    <view class="main_function">
+      <view bindtap="goCamera" class="main_item camera">
+        <view>相机</view>
+        <iconfont name="xiangji1"></iconfont>
+      </view>
+      <view bindtap="choseImg" class="main_item img">
+        <view>图片水印</view>
+        <iconfont name="icon"></iconfont>
+      </view>
+    </view>
+    <view class="myImg">
+      <view bindtap="showMyImg" class="imgView">
+        <iconfont name="shouye"></iconfont>
+        <view class="imgText">我的照片</view>
+      </view>
+    </view>
+  </view>
+</view>

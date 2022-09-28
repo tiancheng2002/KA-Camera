@@ -1,0 +1,7 @@
+.canvas_show{
+  z-index: 999;
+}
+.canvas_hidden{
+  position: fixed;
+  left: 100%;
+}

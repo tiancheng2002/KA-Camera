@@ -1,0 +1,17 @@
+{
+  "name": "miniprogram-ts-less-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vant/weapp": "^1.10.5",
+    "miniprogram-computed": "^4.4.0"
+  },
+  "devDependencies": {
+    "mini-program-iconfont-cli": "^0.6.1",
+    "miniprogram-api-typings": "^2.8.3-1"
+  }
+}

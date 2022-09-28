@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "iconfont":"../../iconfont/iconfont",
+    "location":"../../component/location/index"
+  }
+}

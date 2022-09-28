@@ -1,0 +1,4 @@
+<view bindtap="position" class="user_location">
+  <van-icon size="24" name="location-o" />{{location.name?location.name:"请选择定位"}}
+</view>
+<!-- <button bindtap="catLocation">查看定位</button> -->

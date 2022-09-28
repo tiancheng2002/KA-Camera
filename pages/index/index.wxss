@@ -1,0 +1,53 @@
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("https://pic.imgdb.cn/item/6184ebaf2ab3f51d912f77e1.png");
+}
+.main_function{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main_item{
+  color: white;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 6px;
+  border-radius: 10px;
+  height: 80px;
+}
+.main_item.camera{
+  background: linear-gradient(-30deg,#fccf31,#f55555);
+}
+.main_item.img{
+  background: linear-gradient(-30deg,#3c8ce7,#00eaff);
+}
+.myImg{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgView{
+  color: white;
+  width: 92%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  height: 55px;
+  background: linear-gradient(-30deg,#ce9ffc,#7367f0);
+}
+.imgText{
+  margin-left: 16px;
+}
+.location{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}

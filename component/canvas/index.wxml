@@ -1,0 +1,2 @@
+<canvas canvas-id="my-canvas" class="{{camera?'canvas_hidden':'canvas_show'}}" style="width:{{canvasWidth}}px;height:{{canvasHeight}}px;line-height: 70%;">
+</canvas>

@@ -1,0 +1,62 @@
+<view class="container">
+  <view class="camera_header">
+    <location id="location"></location>
+    <iconfont wx:if="{{camera}}" bindtap="timeout" name="dingshi"></iconfont>
+  </view>
+  <view class="camera_show">
+    <my-canvas bind:myevent="myEvent" id="myCanvas" camera="{{camera}}"></my-canvas>
+    <view wx:if="{{showText}}" class="camera text">{{time}}</view>
+    <camera wx:if="{{camera}}" class="camera" resolution="high" device-position="{{position}}" flash="{{flash}}" binderror="error"></camera>
+  </view>
+  <view class="camera_function">
+    <view wx:if="{{src==''}}" class="function_button">
+      <view>
+        <iconfont bindtap="changeFlash" name="{{flash=='on'?'shanguangdeng-kai':'shanguangdeng-guan'}}"></iconfont>
+      </view>
+      <view class="take_border">
+        <view bindtap="takePhoto2" class="take_button"></view>
+      </view>
+      <view>
+        <iconfont bindtap="changePosition" name="fanzhuanxiangjibeifen3"></iconfont>
+      </view>
+    </view>
+    <view wx:if="{{src!=''}}" class="function_button">
+      <van-button icon="revoke" custom-style="width:300rpx;letter-spacing:1px;height:40px;" color="rgb(228, 77, 68)" round="true" bindtap="retake" type="primary">重新拍摄</van-button>
+      <van-button icon="sign" custom-style="width:300rpx;letter-spacing:1px;height:40px;" color="rgb(1, 129, 254)" round="true" bindtap="saveImg" type="info">保存到相册</van-button>
+    </view>
+  </view>
+  <!-- <view class="other_function">
+    <view class="function_all">
+      <view class="function_item">
+        <van-icon size="24px" name="chat-o" />
+        <view class="item_text">
+          定时关闭
+        </view>
+      </view>
+      <view class="function_item">
+        <van-icon size="24px" name="chat-o" />
+        <view class="item_text">
+          定时关闭
+        </view>
+      </view>
+      <view class="function_item">
+        <van-icon size="24px" name="chat-o" />
+        <view class="item_text">
+          定时关闭
+        </view>
+      </view>
+      <view class="function_item">
+        <van-icon size="24px" name="chat-o" />
+        <view class="item_text">
+          定时关闭
+        </view>
+      </view>
+      <view class="function_item">
+        <van-icon size="24px" name="chat-o" />
+        <view class="item_text">
+          定时关闭
+        </view>
+      </view>
+    </view>
+  </view> -->
+</view>

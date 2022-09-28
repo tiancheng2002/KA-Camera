@@ -1,0 +1,7 @@
+<view class="container">
+  <my-canvas bind:myevent="myEvent" id="myCanavs"></my-canvas>
+  <view class="function_button">
+    <van-button icon="revoke" custom-style="width:300rpx;letter-spacing:1px;height:40px;" color="rgb(228, 77, 68)" round="true" bindtap="rechoose" type="primary">重新选择</van-button>
+    <van-button icon="sign" custom-style="width:300rpx;letter-spacing:1px;height:40px;" color="rgb(1, 129, 254)" round="true" bindtap="saveImg" type="info">保存到相册</van-button>
+  </view>
+</view>
